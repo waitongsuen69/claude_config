@@ -1,0 +1,29 @@
+{
+  "model": "opus",
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(docker *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(echo *)",
+      "Bash(cd *)",
+      "Bash(cp *)",
+      "Bash(pwd)",
+      "Bash(env)",
+      "Bash(whoami)",
+      "Bash(apt install *)",
+      "Bash(curl -fsSL *)",
+      "Bash(unzip *)",
+      "Bash(tar *)",
+      "Bash(git *)",
+      "Bash(find *)",
+      "Bash(mkdir *)"
+    ],
+  "deny": [
+      "Bash(git push *)"
+    ]
+  }
+}
