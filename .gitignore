@@ -2,3 +2,6 @@ todos/
 projects/
 shell-snapshots/
 statsig/
+ide/
+plugins/
+.DS_Store
