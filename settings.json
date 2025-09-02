@@ -1,33 +1,52 @@
 {
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Funk.aiff"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Purr.aiff"
+          }
+        ]
+      }
+    ]
+  },
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
-      "Bash(pip install *)",
-      "Bash(python *)",
-      "Bash(python3 *)",
-      "Bash(docker *)",
-      "Bash(ls *)",
-      "Bash(cat *)",
-      "Bash(echo *)",
-      "Bash(cd *)",
-      "Bash(cp *)",
+      "Bash(pip install :*)",
+      "Bash(python :*)",
+      "Bash(python3 :*)",
+      "Bash(docker :*)",
+      "Bash(ls :*)",
+      "Bash(cat :*)",
+      "Bash(echo :*)",
+      "Bash(cd :*)",
+      "Bash(cp :*)",
       "Bash(pwd)",
       "Bash(env)",
       "Bash(whoami)",
-      "Bash(apt install *)",
-      "Bash(curl -fsSL *)",
-      "Bash(unzip *)",
-      "Bash(tar *)",
-      "Bash(git *)",
-      "Bash(find *)",
-      "Bash(mkdir *)"
+      "Bash(apt install :*)",
+      "Bash(curl -fsSL :*)",
+      "Bash(unzip :*)",
+      "Bash(tar :*)",
+      "Bash(git :*)",
+      "Bash(find :*)",
+      "Bash(mkdir :*)"
     ],
     "deny": [
-      "Bash(git push *)"
+      "Bash(git push :*)"
     ]
   },
-  "model": "opus",
-  "feedbackSurveyState": {
-    "lastShownTime": 1754110190890
-  }
+  "model": "opus"
 }
